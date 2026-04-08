@@ -1,0 +1,453 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yoga Unnati</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                primary: "#E07A3F",
+                dark: "#2C1A14",
+                bg: "#F8F5F2",
+                accent: "#6F8F72",
+                white: "#FFFFFF",
+                section: "#EFE7DF",
+              },
+            },
+            fontFamily: {
+              heading: ["Playfair Display", "serif"],
+              body: ["Inter", "sans-serif"],
+            },
+            borderRadius: {
+              xl: "12px",
+            },
+            boxShadow: {
+              soft: "0 16px 40px rgba(44, 26, 20, 0.12)",
+              card: "0 12px 24px rgba(44, 26, 20, 0.12)",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+        background-color: #f8f5f2;
+        color: #2c1a14;
+      }
+      .section-gap {
+        margin-top: 48px;
+      }
+      @media (min-width: 768px) {
+        .section-gap {
+          margin-top: 80px;
+        }
+      }
+    </style>
+  </head>
+  <body class="bg-brand-bg text-brand-dark">
+    <nav class="sticky top-0 z-40 border-b border-brand-dark/10 bg-brand-bg/90 backdrop-blur-md">
+      <div class="mx-auto flex h-[80px] max-w-[1200px] items-center justify-between px-8">
+        <div class="flex items-center gap-2">
+          <img src="../Images/logo.png" alt="Yoga Unnati" class="h-[33px] w-[33px] rounded-xl sm:h-[44px] sm:w-[44px]" />
+          <span class="font-heading text-[25px] font-medium leading-[1.2] sm:text-[31px]">Yoga Unnati</span>
+        </div>
+        <div class="flex items-center gap-3">
+          <a
+            href="../regsessions-mr/"
+            class="inline-flex h-11 items-center rounded-[12px] border border-brand-dark/20 px-[18px] text-[14px] font-semibold text-brand-dark transition hover:bg-brand-dark/5"
+          >
+            मराठी
+          </a>
+          <button
+            class="inline-flex h-11 items-center gap-2 rounded-[12px] bg-brand-primary px-[22px] text-[15px] font-semibold text-brand-white shadow-soft transition hover:scale-[1.03] hover:bg-[#c96a34]"
+          >
+            <i data-lucide="message-circle" class="h-5 w-5 text-brand-white"></i>
+            WhatsApp Us
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section
+        class="mx-auto mt-3 flex min-h-[81vh] max-w-[1200px] items-center justify-center px-6 md:mt-4"
+        style="
+          background-image: linear-gradient(
+              180deg,
+              rgba(26, 26, 26, 0.72),
+              rgba(26, 26, 26, 0.45)
+            ),
+            url('../../Images/heroImage.jpeg');
+          background-size: cover;
+          background-position: center;
+          border-radius: 16px;
+        "
+      >
+        <div class="max-w-[650px] text-center text-brand-white">
+          <h1 class="font-heading text-[32px] font-bold leading-[1.2] md:text-[48px]">
+            Daily Yoga Classes in Katraj
+          </h1>
+          <p class="mt-4 text-[24px] leading-[1.6] text-brand-white/85">
+            Traditional Hatha Yoga • Morning batch • Personal Guidance
+          </p>
+          <div class="mt-5 flex flex-col items-stretch justify-center gap-5 sm:flex-row sm:items-stretch">
+            <button
+              class="h-11 rounded-xl bg-brand-primary px-5 text-[16px] font-semibold text-brand-white shadow-soft transition hover:bg-[#c96a34]"
+            >
+              Book a Free Trial
+            </button>
+            <button
+              class="h-11 rounded-xl border border-brand-white/40 px-5 text-[16px] font-semibold text-brand-white transition hover:bg-brand-white/10"
+            >
+              <i data-lucide="message-circle" class="mr-2 inline-block h-5 w-5 text-brand-white"></i>
+              +91 7620808193
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-gap">
+        <div class="mx-auto grid max-w-[1200px] gap-10 px-6 lg:grid-cols-2">
+          <div class="mx-auto w-full max-w-[420px] overflow-hidden rounded-[16px] bg-brand-white shadow-soft">
+            <img
+              src="../Images/instructorImage.jpeg"
+              alt="Instructor"
+              class="h-full w-full object-cover"
+            />
+          </div>
+          <div class="space-y-6 self-center">
+            <h2 class="font-heading text-[29px] font-semibold leading-[1.2] text-brand-dark md:text-[38px]">
+              Why Yoga Unnati?
+            </h2>
+            <div class="mt-6 space-y-[19px] text-[19px] leading-[1.6] text-brand-dark/90">
+              <div class="flex items-start gap-4 rounded-[12px] bg-brand-white p-[19px] shadow-soft">
+                <i data-lucide="graduation-cap" class="mt-1 h-[26px] w-[26px] text-brand-primary"></i>
+                <span>Highly trained teacher from Sadhguru Gurukulam</span>
+              </div>
+              <div class="flex items-start gap-4 rounded-[12px] bg-brand-white p-[19px] shadow-soft">
+                <i data-lucide="award" class="mt-1 h-[26px] w-[26px] text-brand-primary"></i>
+                <span>Years of teaching experience</span>
+              </div>
+              <div class="flex items-start gap-4 rounded-[12px] bg-brand-white p-[19px] shadow-soft">
+                <i data-lucide="sparkles" class="mt-1 h-[26px] w-[26px] text-brand-primary"></i>
+                <span>An Immersive Studio</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-gap bg-brand-section py-[100px]">
+        <div class="mx-auto max-w-[1200px] px-6">
+          <h2 class="font-heading text-[24px] font-semibold leading-[1.2] text-brand-dark md:text-[32px]">
+            In Our Class:
+          </h2>
+          <div class="mt-8 mx-auto grid max-w-[900px] gap-6 md:grid-cols-3">
+            <div class="rounded-[14px] bg-brand-white p-[19px] text-center shadow-[0_16px_30px_rgba(44,26,20,0.16)] transition hover:-translate-y-1">
+              <img
+                src="../Images/Pranayama.png"
+                alt="Pranayama & Nada Yoga"
+                class="mx-auto mb-4 h-[74px] w-[74px] object-contain"
+              />
+              <p class="text-[19px] leading-[1.6] font-medium">Pranayama &amp; Nada Yoga</p>
+            </div>
+            <div class="rounded-[14px] bg-brand-white p-[19px] text-center shadow-[0_16px_30px_rgba(44,26,20,0.16)] transition hover:-translate-y-1">
+              <img
+                src="../Images/ClassicalHathaYoga.png"
+                alt="Classical Hatha Yoga"
+                class="mx-auto mb-4 h-[74px] w-[74px] object-contain"
+              />
+              <p class="text-[19px] leading-[1.6] font-medium">Classical Hatha Yoga</p>
+            </div>
+            <div class="rounded-[14px] bg-brand-white p-[19px] text-center shadow-[0_16px_30px_rgba(44,26,20,0.16)] transition hover:-translate-y-1">
+              <img
+                src="../Images/GuidedMeditation.png"
+                alt="Guided Meditation"
+                class="mx-auto mb-4 h-[74px] w-[74px] object-contain"
+              />
+              <p class="text-[19px] leading-[1.6] font-medium">Guided Meditation</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-gap">
+        <div class="mx-auto max-w-[1200px] px-6">
+          <h2 class="font-heading text-[24px] font-semibold leading-[1.2] text-brand-dark md:text-[32px]">
+            What Students Say
+          </h2>
+          <div class="mt-6 grid gap-6 md:grid-cols-2">
+            <div class="mx-auto w-full max-w-[647px] rounded-[14px] bg-brand-white p-[25px] shadow-[0_20px_39px_rgba(44,26,20,0.16)]">
+              <div class="flex items-center gap-[20px]">
+                <img
+                  src="../Images/testimonial-man.png"
+                  alt="35 year old man iamge"
+                  class="h-[69px] w-[69px] rounded-full object-cover"
+                />
+                <div>
+                  <p class="text-[21px] font-medium leading-[1.6]">Akshay J, IT Professional, 32</p>
+                </div>
+              </div>
+              <p class="mt-4 text-[20px] leading-[1.5] text-brand-dark/80">
+                "These yoga classes really helped me with my back pain issues."
+              </p>
+            </div>
+            <div class="mx-auto w-full max-w-[647px] rounded-[14px] bg-brand-white p-[25px] shadow-[0_20px_39px_rgba(44,26,20,0.16)]">
+              <div class="flex items-center gap-[20px]">
+                <img
+                  src="../Images/testimonial-woman.png"
+                  alt="37 year old women image"
+                  class="h-[69px] w-[69px] rounded-full object-cover"
+                />
+                <div>
+                  <p class="text-[21px] font-medium leading-[1.6]">Meera S, Housewife, 45</p>
+                </div>
+              </div>
+              <p class="mt-4 text-[20px] leading-[1.5] text-brand-dark/80">
+                "I'm more active and relaxed now."
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-gap bg-brand-bg py-[100px]">
+        <div class="mx-auto grid max-w-[1200px] gap-8 px-6 lg:grid-cols-2 lg:items-center">
+          <div class="space-y-8">
+            <div class="flex items-start gap-3">
+              <i data-lucide="map-pin" class="mt-1 h-10 w-10 text-brand-primary"></i>
+              <h2 class="font-heading text-[28px] font-semibold leading-[1.2] text-brand-dark">
+                <span class="font-body">5</span> mins from Katraj Chowk
+              </h2>
+            </div>
+            <button
+              class="inline-flex h-11 items-center gap-2 rounded-xl bg-brand-primary px-5 text-[16px] font-semibold text-brand-white shadow-soft transition hover:bg-[#c96a34]"
+            >
+              Visit the studio
+            </button>
+          </div>
+          <div class="overflow-hidden rounded-xl bg-brand-white shadow-soft">
+            <iframe
+              title="Yoga Unnati, Katraj, Pune"
+              class="h-[280px] w-full border-0"
+              loading="lazy"
+              allowfullscreen
+              referrerpolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps?q=Yoga%20Unnati%2C%20Katraj%2C%20Pune&output=embed"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-gap bg-brand-section py-[100px]">
+        <div class="mx-auto flex max-w-[1200px] flex-col gap-20 px-6">
+          <div class="mx-auto w-full max-w-[900px]">
+            <div class="flex flex-col items-center gap-4 text-center">
+              <div class="h-[3px] w-full bg-brand-dark/25"></div>
+              <p class="text-[21px] leading-[1.6] font-semibold text-brand-dark">
+                Fees : ₹ 999 / month • Book a free trial first
+              </p>
+              <div class="h-[3px] w-full bg-brand-dark/25"></div>
+            </div>
+          </div>
+          <div class="mx-auto w-full max-w-[700px]">
+            <div class="rounded-xl bg-brand-white p-5 text-center shadow-soft">
+              <p class="text-[21px] leading-[1.2] font-medium text-brand-dark/80">
+                Limited Seats, Contact below to reserve your seat :
+              </p>
+              <div class="mt-6 flex flex-col items-stretch justify-center gap-4 sm:flex-row sm:items-stretch">
+                <button
+                  class="h-12 rounded-xl bg-brand-primary px-6 text-[16px] font-semibold text-brand-white shadow-card transition hover:scale-[1.02] hover:bg-[#c96a34]"
+                >
+                  Book a Free Trial
+                </button>
+                <button
+                  class="h-12 rounded-xl border border-brand-dark/30 px-6 text-[16px] font-semibold text-brand-dark transition hover:bg-brand-bg"
+                >
+                  <i data-lucide="message-circle" class="mr-2 inline-block h-5 w-5 text-brand-primary"></i>
+                  +91 7620808193
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-gap">
+        <div class="mx-auto max-w-[1200px] px-6">
+          <h2 class="font-heading text-[24px] font-semibold leading-[1.2] text-brand-dark md:text-[32px]">
+            Frequently Asked Questions
+          </h2>
+          <div class="mt-6 space-y-[14px]">
+            <div class="rounded-xl bg-brand-white p-4 shadow-soft transition hover:bg-brand-section/60">
+              <button class="faq-toggle flex w-full items-center justify-between text-left">
+                <span class="text-[18px] leading-[1.6] font-semibold">
+                  How are these sessions different from fitness yoga or power yoga?
+                </span>
+                <span
+                  class="faq-icon inline-flex h-5 w-5 items-center justify-center text-brand-primary transition-transform duration-300"
+                >
+                  <i data-lucide="chevron-down" class="h-5 w-5"></i>
+                </span>
+              </button>
+              <div class="faq-panel max-h-0 overflow-hidden text-[16px] leading-[1.6] text-brand-dark/80 transition-all duration-300">
+                <p class="pt-3">
+                  Classical Hatha Yoga emphasizes awareness, alignment, and inner balance, not just physical workout. It’s a traditional system meant for overall wellbeing - body, mind, and energy.
+                </p>
+              </div>
+            </div>
+            <div class="rounded-xl bg-brand-white p-4 shadow-soft transition hover:bg-brand-section/60">
+              <button class="faq-toggle flex w-full items-center justify-between text-left">
+                <span class="text-[18px] leading-[1.6] font-semibold">What are the timings?</span>
+                <span
+                  class="faq-icon inline-flex h-5 w-5 items-center justify-center text-brand-primary transition-transform duration-300"
+                >
+                  <i data-lucide="chevron-down" class="h-5 w-5"></i>
+                </span>
+              </button>
+              <div class="faq-panel max-h-0 overflow-hidden text-[16px] leading-[1.6] text-brand-dark/80 transition-all duration-300">
+                <p class="pt-3">Morning: 6:00 - 7:15 AM</p>
+              </div>
+            </div>
+            <div class="rounded-xl bg-brand-white p-4 shadow-soft transition hover:bg-brand-section/60">
+              <button class="faq-toggle flex w-full items-center justify-between text-left">
+                <span class="text-[18px] leading-[1.6] font-semibold">
+                  I've never done any yoga. Can I join?
+                </span>
+                <span
+                  class="faq-icon inline-flex h-5 w-5 items-center justify-center text-brand-primary transition-transform duration-300"
+                >
+                  <i data-lucide="chevron-down" class="h-5 w-5"></i>
+                </span>
+              </button>
+              <div class="faq-panel max-h-0 overflow-hidden text-[16px] leading-[1.6] text-brand-dark/80 transition-all duration-300">
+                <p class="pt-3">
+                  Most participants at YogaUnnati are first timers and have reaped the benefits. We ensure to give the necessary asana modifications needed at individual level.
+                </p>
+              </div>
+            </div>
+            <div class="rounded-xl bg-brand-white p-4 shadow-soft transition hover:bg-brand-section/60">
+              <button class="faq-toggle flex w-full items-center justify-between text-left">
+                <span class="text-[18px] leading-[1.6] font-semibold">
+                  What all practices do you teach during the daily classes?
+                </span>
+                <span
+                  class="faq-icon inline-flex h-5 w-5 items-center justify-center text-brand-primary transition-transform duration-300"
+                >
+                  <i data-lucide="chevron-down" class="h-5 w-5"></i>
+                </span>
+              </button>
+              <div class="faq-panel max-h-0 overflow-hidden text-[16px] leading-[1.6] text-brand-dark/80 transition-all duration-300">
+                <p class="pt-3">
+                  Daily classes follow a yogic routine consisting of multiple practices. It includes Classical Hatha Yoga Postures (Asanas), Yogic breathing (Pranayama), and Meditation.
+                </p>
+              </div>
+            </div>
+            <div class="rounded-xl bg-brand-white p-4 shadow-soft transition hover:bg-brand-section/60">
+              <button class="faq-toggle flex w-full items-center justify-between text-left">
+                <span class="text-[18px] leading-[1.6] font-semibold">Do you teach meditation?</span>
+                <span
+                  class="faq-icon inline-flex h-5 w-5 items-center justify-center text-brand-primary transition-transform duration-300"
+                >
+                  <i data-lucide="chevron-down" class="h-5 w-5"></i>
+                </span>
+              </button>
+              <div class="faq-panel max-h-0 overflow-hidden text-[16px] leading-[1.6] text-brand-dark/80 transition-all duration-300">
+                <p class="pt-3">
+                  Yes, we teach meditation. It is taught both in the workshop and the daily guided sessions.
+                </p>
+              </div>
+            </div>
+            <div class="rounded-xl bg-brand-white p-4 shadow-soft transition hover:bg-brand-section/60">
+              <button class="faq-toggle flex w-full items-center justify-between text-left">
+                <span class="text-[18px] leading-[1.6] font-semibold">Where is your yoga studio located?</span>
+                <span
+                  class="faq-icon inline-flex h-5 w-5 items-center justify-center text-brand-primary transition-transform duration-300"
+                >
+                  <i data-lucide="chevron-down" class="h-5 w-5"></i>
+                </span>
+              </button>
+              <div class="faq-panel max-h-0 overflow-hidden text-[16px] leading-[1.6] text-brand-dark/80 transition-all duration-300">
+                <p class="pt-3">Address :</p>
+                <p>Sr no 33/89, Yoga Unnati Studio, Shivshambonagar Lane no 1, Opposite Petrol Pump, Pune - 46.</p>
+                <p class="mt-3">Google Maps link :</p>
+                <a
+                  href="https://maps.app.goo.gl/uz1EcTqb61TXebot9"
+                  class="text-brand-dark underline"
+                >
+                  https://maps.app.goo.gl/uz1EcTqb61TXebot9
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="section-gap bg-brand-dark text-brand-white">
+      <div class="mx-auto grid max-w-[1200px] gap-[40px] px-6 py-[60px] md:grid-cols-3 md:gap-[52px] md:py-[78px]">
+        <div class="space-y-3">
+          <div class="flex items-center gap-2">
+            <img src="../Images/logo.png" alt="Yoga Unnati" class="h-[31px] w-[31px] rounded-xl md:h-[41px] md:w-[41px]" />
+            <p class="font-heading text-[26px] font-semibold leading-[1.2] md:text-[33px]">Yoga Unnati</p>
+          </div>
+          <p class="text-[16px] leading-[1.6] text-white/70 md:text-[18px]">
+            An initiative dedicated to inner growth and well-being, bringing classical yoga practices in its purest form.
+          </p>
+        </div>
+        <div class="space-y-[10px] text-[16px] leading-[1.6] text-white/70 md:space-y-[13px] md:text-[18px]">
+          <p class="text-[18px] font-bold text-brand-white md:text-[21px]">Address:</p>
+          <p class="inline-flex items-center gap-2">
+            <i data-lucide="map-pin" class="h-5 w-5 text-brand-primary md:h-[21px] md:w-[21px]"></i>
+            Shivshambonagar Lane no 1,
+          </p>
+          <p>Katraj Kondhwa road,</p>
+          <p>Pune - 46</p>
+        </div>
+        <div class="space-y-[10px] text-[16px] leading-[1.6] text-white/70 md:space-y-[13px] md:text-[18px]">
+          <p class="text-[18px] font-bold text-brand-white md:text-[21px]">Contact:</p>
+          <p class="inline-flex items-center gap-2">
+            <i data-lucide="phone" class="h-5 w-5 text-brand-primary md:h-[21px] md:w-[21px]"></i>
+            <i data-lucide="message-circle" class="h-5 w-5 text-brand-primary md:h-[21px] md:w-[21px]"></i>
+            +91 7620808193
+          </p>
+          <p class="inline-flex items-center gap-2">
+            <i data-lucide="mail" class="h-5 w-5 text-brand-primary md:h-[21px] md:w-[21px]"></i>
+            <a href="mailto:namaste@yogaunnati.in">namaste@yogaunnati.in</a>
+          </p>
+          <div class="flex items-center gap-[12px] pt-1 md:gap-[16px]">
+            <a href="#" aria-label="Instagram" class="text-white/70 transition hover:text-white">
+              <i data-lucide="instagram" class="h-[20px] w-[20px] md:h-[26px] md:w-[26px]"></i>
+            </a>
+            <a href="#" aria-label="Facebook" class="text-white/70 transition hover:text-white">
+              <i data-lucide="facebook" class="h-[20px] w-[20px] md:h-[26px] md:w-[26px]"></i>
+            </a>
+            <a href="#" aria-label="YouTube" class="text-white/70 transition hover:text-white">
+              <i data-lucide="youtube" class="h-[20px] w-[20px] md:h-[26px] md:w-[26px]"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-white/20">
+        <div class="mx-auto max-w-[1200px] px-6 py-[20px] text-center text-[14px] text-white/70 md:py-[26px] md:text-[18px]">
+          © 2026 Yoga Unnati. All rights reserved.
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="../script.js"></script>
+  </body>
+</html>
